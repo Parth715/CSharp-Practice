@@ -33,3 +33,11 @@ foreach(var i in num)
         Console.WriteLine("Odd!");
     }
 }
+var count1 = 0;
+var total = 0;
+foreach(var i in num)
+{
+    total += i;
+    count1++;
+}
+Console.WriteLine(total / count1);
