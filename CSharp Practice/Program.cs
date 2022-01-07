@@ -41,3 +41,18 @@ foreach(var i in num)
     count1++;
 }
 Console.WriteLine(total / count1);
+var max = 0;
+var min = 1000;
+foreach(var i in num)
+{
+    if(i > max)
+    {
+        max = i;
+    }
+    if (i < min)
+    {
+        min = i;
+    }
+}
+Console.WriteLine($"Max is {max}");
+Console.WriteLine($"Min is {min}");
