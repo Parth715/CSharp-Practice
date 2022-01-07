@@ -40,6 +40,7 @@ foreach(var i in num)
     total += i;
     count1++;
 }
+Console.WriteLine($"Total number of ints in the list are {count1}");
 Console.WriteLine(total / count1);
 var max = 0;
 var min = 1000;
@@ -56,3 +57,16 @@ foreach(var i in num)
 }
 Console.WriteLine($"Max is {max}");
 Console.WriteLine($"Min is {min}");
+Random random = new Random();
+var one = random.Next(101);
+var two = random.Next(101);
+if((num[one]*num[two]) % 2 == 0)
+{
+    Console.WriteLine("The product is even");
+    Console.WriteLine(num[one]*num[two]);
+}
+if ((num[one] * num[two]) % 2 != 0)
+{
+    Console.WriteLine("The product is odd");
+    Console.WriteLine(num[one] * num[two]);
+}
