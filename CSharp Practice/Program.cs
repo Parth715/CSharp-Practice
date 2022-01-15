@@ -82,3 +82,28 @@ for(var i = pyramid1; i >= 0; i--)
     }
     Console.WriteLine();
 }
+//User can enter username and password 3 times before being rejected
+var username = "Parth715";
+var password = "Srjtzyi3";
+string username1 = "";
+string password1 = "";
+for(var i = 0; i <= 2; i++)
+{
+    Console.WriteLine("What is your Username?");
+    username1 = Console.ReadLine();
+    Console.WriteLine("What is your Password?");
+    password1 = Console.ReadLine();
+    if(username1 == username && password == password1)
+    {
+        Console.WriteLine("That was the correct information");
+        break;
+    }
+    if(username != username1 || password != password1)
+    {
+        Console.WriteLine("That information was incorrect");
+        if(i == 2)
+        {
+            Console.WriteLine("You have reached the maximum attempts allowed");
+        }
+    }
+}
