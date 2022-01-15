@@ -70,3 +70,15 @@ if ((num[one] * num[two]) % 2 != 0)
     Console.WriteLine("The product is odd");
     Console.WriteLine(num[one] * num[two]);
 }
+//Make a pyramid using the number providing and that will also be the width
+Console.WriteLine("Pick a number");
+var pyramid = Console.ReadLine();
+var pyramid1 = Int32.Parse(pyramid);
+for(var i = pyramid1; i >= 0; i--)
+{
+    for(var p = 0; p < i; p++)
+    {
+        Console.Write(pyramid1);
+    }
+    Console.WriteLine();
+}
